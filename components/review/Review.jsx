@@ -1,18 +1,18 @@
-import  {urlFor} from "../../sanity.js"
+import { urlFor } from "../../sanity.js"
 
 const Review = ({ review }) => {
   return (
-    <div className="review-box">
-      <h1>{review.rating}</h1>
-      <h2>{review.traveller.name}</h2>
+    <div className="flex gap-5">
       <img
-      className="rounded-xl"
-        src={urlFor(review.traveller.image)
+        className="rounded-xl"
+        src={ urlFor(review.traveller.image)
           .width(60)
           .height(50)
           .crop("focalpoint")
-          .auto("format")}
+          .auto("format") }
       />
+      <h2>{ review.traveller.name }</h2>
+      <h1>{ review.rating }</h1>
     </div>
   )
 }

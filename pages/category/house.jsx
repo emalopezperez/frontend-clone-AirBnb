@@ -1,5 +1,4 @@
 import Layout from "@/components/layout/Layout"
-import NavTop from "@/components/nav/NavTop"
 import NavEnd from "@/components/nav/NavEnd"
 import Card from "@/components/cards/Card"
 import { sanityClient } from '../../sanity'
@@ -20,10 +19,8 @@ export const getServerSideProps = async () => {
 
 export default function house({ filteredProperties, }) {
 
-
   return (
     <div>
-      <NavTop />
       <Layout>
         <NavEnd />
         <div className="container flex-wrap md:flex">

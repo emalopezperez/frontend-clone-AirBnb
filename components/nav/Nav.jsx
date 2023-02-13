@@ -2,12 +2,12 @@ import Link from "next/link"
 
 const Nav = () => {
   return (
-    <div className="container">
-
+    <div className="container px-4">
       <div className="navbar">
         <Link href="/">
-          <h1>AirBnb</h1>
+          <h1 className="font-bold">airbnb</h1>
         </Link>
+
         <div className="search">
           <form>
             <div className="input-container">
@@ -21,28 +21,28 @@ const Nav = () => {
         <div className="menu">
           <ul className="nav-menu">
             <li>
-              <a  href="#listings" className="nav-link"
+              <a href="#listings" className="nav-link"
               >Listings</a
               >
             </li>
             <li>
-              <a  href="#featured" className="nav-link"
+              <a href="#featured" className="nav-link"
               >Featured</a
               >
             </li>
             <li>
-              <a  href="#popular" className="nav-link"
+              <a href="#popular" className="nav-link"
               >Popular</a
               >
             </li>
           </ul>
-          <div  className="mobile">
+          <div className="mobile">
             <i className="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
 
-      
+
     </div>
   )
 }

@@ -1,22 +1,15 @@
 import { urlFor } from "@/sanity"
 import Link from "next/link"
 
-
-
 const Card = ({ element }) => {
   const { title,
-    location,
-    propertyType,
     mainImage,
     pricePerNight,
-    description,
-    host,
-    _id,
-    reviews } = element
+    _id, } = element
 
 
   return (
-    <div key={ _id } className="card">
+    <div key={ _id } className="card ">
     <Link href={`property/${element.slug.current}`}>
       <img src={ urlFor(mainImage) } alt="" />
       <div>

@@ -30,7 +30,7 @@ html {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1360px;
   margin: auto;
   padding: 0 px;
 }
@@ -133,7 +133,6 @@ html {
 /* Sort Bar */
 .sort-bar {
   display: flex;
-  justify-content: space-between;
   padding: 1rem 0;
   color: #5e5e5e;
 }
@@ -315,6 +314,7 @@ html {
   max-width: 300px;
   width: 100%;
   font-size: 0.9rem;
+  
 }
 
 .listings .card-title {
@@ -400,5 +400,8 @@ img {
   .right-menu {
     flex-direction: column;
   }
+}
+.card{
+  padding-left: 40px;
 }
 }

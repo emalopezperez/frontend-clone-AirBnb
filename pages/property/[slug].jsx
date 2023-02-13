@@ -46,7 +46,6 @@ export const getServerSideProps = async (pageContext) => {
     return {
       props: {
         title: property.title,
-        location: property.location,
         propertyType: property.propertyType,
         mainImage: property.mainImage,
         images: property.images,
@@ -63,7 +62,6 @@ export const getServerSideProps = async (pageContext) => {
 
 const Property = ({
   title,
-  location,
   propertyType,
   mainImage,
   images,
@@ -95,34 +93,34 @@ const Property = ({
         </div>
 
         <div className="section">
-          <div className="information">
-            <h2>
+          <div className="pt-2 information ">
+            <h2 className="pt-2">
               <b>
                 { propertyType } hosted by { host?.name }
               </b>
             </h2>
-            <h4>
+            <h4 className="pt-4">
               { bedrooms } bedroom{ isMultiple(bedrooms) } * { beds } bed
               { isMultiple(beds) }
             </h4>
             <hr />
-            <h4>
+            <h4 className="pt-4">
               <b>Enhanced Clean</b>
             </h4>
-            <p>
+            <p className="">
               This host is committed to Airbnbs 5-step enhanced cleaning process.
             </p>
-            <h4>
+            <h4 className="pt-4">
               <b>Amenities for everyday living</b>
             </h4>
             <p>
               The host has equipped this place for long stays - kitchen, shampoo,
               conditioner, hairdryer included.
             </p>
-            <h4>
+            <h4 className="pt-4">
               <b>House rules</b>
             </h4>
-            <p>
+            <p className="">
               This place isnt suitable for pets andthe host does not allow parties
               or smoking.
             </p>
@@ -141,17 +139,15 @@ const Property = ({
         </div>
 
         <hr />
-        <h4 className="w-[700px]">{ description }</h4>
+        <h4 className="w-[700px] pt-4 pb-2">{ description }</h4>
         <hr />
-        <h2>
-          { reviewAmount } review{ isMultiple(reviewAmount) }
+        <h2 className="pt-6 pb-4">
+          { reviewAmount } reseña{ isMultiple(reviewAmount) }
         </h2>
         { reviewAmount > 0 &&
           reviews.map((review) => <Review key={ review._key } review={ review } />) }
 
         <hr />
-
-        <h2>Location</h2>
       </div>
     </Layout>
   );

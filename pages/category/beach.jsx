@@ -8,7 +8,7 @@ export const getServerSideProps = async () => {
   const query = '* [_type == "property"]'
   const property = await sanityClient.fetch(query)
 
-  const filteredProperties = property.filter(element => element.category == "city")
+  const filteredProperties = property.filter(element => element.category == "beach")
 
   return {
     props: {
@@ -17,7 +17,7 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default function city({ filteredProperties, }) {
+export default function beach({ filteredProperties, }) {
 
 
   return (
