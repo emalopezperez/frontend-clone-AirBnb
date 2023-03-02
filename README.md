@@ -1,38 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Clon de Airbnb con Next.js, Tailwind CSS y Sanity
 
-## Getting Started
+Este proyecto es un clon de la interfaz de usuario de Airbnb construido con Next.js, Tailwind CSS y Sanity. El objetivo es demostrar cómo puedes utilizar estas tecnologías para construir una aplicación web moderna y escalable con una interfaz de usuario atractiva.
+Tecnologías utilizadas
 
-First, run the development server:
+    Next.js
+    Tailwind CSS
+    Sanity
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Requisitos previos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Antes de poder ejecutar esta aplicación, necesitarás tener instalado Node.js en tu ordenador.
+Cómo ejecutar la aplicación
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Clona este repositorio en tu ordenador: git clone https://github.com/tu-usuario/clon-airbnb-nextjs-tailwind-sanity.git
+    En la terminal, navega hasta el directorio del proyecto: cd clon-airbnb-nextjs-tailwind-sanity
+    Instala las dependencias: npm install
+    Crea una cuenta gratuita en Sanity.io y sigue las instrucciones para crear un nuevo proyecto
+    En el panel de control de Sanity, crea una nueva base de datos y configura las credenciales en el archivo .env.local utilizando la plantilla en .env.local.example
+    Importa los datos de ejemplo de Airbnb en tu nueva base de datos siguiendo las instrucciones de la documentación de Sanity
+    Ejecuta la aplicación: npm run dev
+    Abre tu navegador web y navega a http://localhost:3000
